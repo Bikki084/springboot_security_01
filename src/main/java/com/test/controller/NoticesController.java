@@ -3,12 +3,10 @@ package com.test.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
-public class welcomeController{
-	@GetMapping("/welcome")
-	public String sayWelcome() {
-		return "this is the welcome page with spring security";
+public class NoticesController {
+	@GetMapping("/notices")
+	public String getNotices(String input) {
+		return "here are the notices from DB";
 	}
-	
 }
